@@ -1,8 +1,8 @@
 
-## _ATOM on open-domain neural search and question answering at scale_
-====================================
+## <p align="middle">_ATOM on open-domain neural search and question answering at scale_</p>
+---
 
-<h2 align="center"><i>A Transformer Orchestration Model on open-domain neural search and question answering at scale</i></h2>
+<h2 align="center"><b>A</b> <b>T</b>ransformer <b>O</b>rchestration <b>M</b>odel</h2>
 
 Today, neural search and question answering rely on effiecent retrieval procedure to select approximate candidates to the given query. Well-known sparce vector models, such as `BM25` wrapped around `TF-IDF` score modeling, provide strong baseline. Famous `ElasticSearch` distributed system which is built on top of `Lucene` library provide working and reliable solution in a majority of 
 real-world scenarios.
@@ -22,11 +22,11 @@ which are itself splitted into smaller chunks or paragraphs
 P = {p_1, p_2, ..., p_m}, m >> n
 ```
 one has to find the `top-k` (`k <= 10`) 
-paragraphs among which the desired answer to the query `Q` is presented and the task itself is to find a span of words in those `top-k` paragraphs such that:
+paragraphs among which the desired answer to the query `Q` is presented and the additional `QA` task is to find a span of words in those `top-k` paragraphs such that:
 ```
 {w_s, ... , w_e}
 ```
 is the answer to the query.
 
 
-![atom_definition](./docs/atom_definition_img.png)
+![atom_definition](./docs/ATOM-def.png)
